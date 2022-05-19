@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/theme_bg"
+    android:layout_height="match_parent"
+    tools:context=".afterlogin.UI.MessengerFragment">
+
+    <include
+        android:id="@+id/messenger_toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/messenger_whatsappicon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/messenger_toolbar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_messenger_whatsapp" />
+
+    <TextView
+        android:id="@+id/messanger_textbot"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/messenger_toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="53dp"
+        android:layout_toRightOf="@+id/messenger_whatsappicon"
+        android:background="@drawable/messengertxt_bg"
+        android:fontFamily="@font/montregular"
+        android:gravity="center_vertical"
+        android:paddingLeft="23dp"
+        android:text="Hi, How can we help you?"
+        android:textColor="@color/themecolor1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/messanger_senttext"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/messanger_textbot"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="53dp"
+        android:layout_toRightOf="@+id/messenger_whatsappicon"
+        android:background="@drawable/messengertxt_bg"
+        android:gravity="center_vertical|end"
+        android:paddingLeft="23dp"
+        android:paddingRight="15sp"
+        android:textColor="@color/themecolor1"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/messenger_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/messengertxt_rounded_bg"
+        android:fontFamily="@font/montregular"
+        android:hint="Send a message..."
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:textColorHint="@color/textview_color" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/messenger_sendbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/messenger_input"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/messenger_btn"
+        android:drawableStart="@drawable/ic_messengar_btn"
+        android:paddingLeft="17dip"
+        android:paddingRight="15dip" />
+
+</RelativeLayout>

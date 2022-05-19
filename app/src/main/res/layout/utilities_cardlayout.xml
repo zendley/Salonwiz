@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/utility_cardlayout"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/util_cardimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gas" />
+
+        <TextView
+            android:id="@+id/util_cardtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/util_cardimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/montregular"
+            android:text="Gas"
+            android:textAlignment="center"
+            android:textColor="@color/themecolor2"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/getutilitydetail_fillform"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Fill Form"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montregular"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@drawable/themebtn_rounded_bg" />
+
+</LinearLayout>

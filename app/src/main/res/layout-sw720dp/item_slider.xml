@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_145sdp"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_103sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_ban1" />
+
+    <TextView
+        android:id="@+id/textView_sliderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_slider"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/montregular"
+        android:gravity="end"
+        android:text="Special Offers"
+        android:textColor="@color/themecolor1"
+        android:textSize="18sp" />
+
+</RelativeLayout>

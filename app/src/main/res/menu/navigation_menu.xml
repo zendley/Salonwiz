@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/homeselector"
+        />
+    <item android:id="@+id/information"
+        android:enabled="true"
+        android:title="Notification"
+        android:icon="@drawable/infoselector" />
+    <item android:id="@+id/messenger"
+        android:title="Messenger"
+        android:enabled="true"
+        android:icon="@drawable/messengerselector" />
+    <item android:id="@+id/support"
+        android:enabled="true"
+        android:title="Support"
+        android:icon="@drawable/serviceselector" />
+    <item android:id="@+id/user"
+        android:title="User"
+        android:enabled="true"
+        android:icon="@drawable/userselector" />
+</menu>

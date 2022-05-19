@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Salonwiz</string>
+    <string name="title_activity_mainscreen">mainscreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_mainlayout">mainlayout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="suppliernames">
+        <item>SSE</item>
+        <item>HUDSON ENERGY</item>
+        <item>Engie</item>
+        <item>eDF</item>
+    </string-array>
+
+
+    <!-- Facebookauthentication -->
+
+    <string name="facebook_app_id">1117882079067530</string>
+    <string name="fb_login_protocol_scheme">fb844981613018749</string>
+    <string name="facebook_client_token">afd1963532319b4900f0c6f7f886290d</string>
+
+    <!-- Marketing package status -->
+    <string name="market_basicstatus">Pending</string>
+    <string name="market_premiumstatus">Pending</string>
+    <string name="market_ultrastatus">Pending</string>
+    <string name="title_activity_service_premium">service_premium</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

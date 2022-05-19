@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewServices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/theme_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageViewNext"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/service_titletext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montregular"
+                        android:text="Basic"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <TextView
+                        android:id="@+id/service_packageStatus"
+                        android:layout_toEndOf="@+id/service_titletext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="Pending"
+                        android:visibility="gone"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montregular"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/service_amountDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="£50 per month"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montregular"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/service_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="66dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:layout_marginRight="10dp"-->
+    <!--        android:background="@drawable/themebtnv2_bg">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/service_titletext"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_marginLeft="23dp"-->
+    <!--            android:text="Basic"-->
+    <!--            android:textAlignment="viewStart"-->
+    <!--            android:textColor="@color/textview_color"-->
+    <!--            android:textSize="18sp"-->
+    <!--            app:fontFamily="@font/montregular" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/service_packageStatus"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_marginLeft="5dp"-->
+    <!--            android:layout_toRightOf="@+id/service_titletext"-->
+    <!--            android:text="Pending"-->
+    <!--            android:textAlignment="viewStart"-->
+    <!--            android:textColor="@color/textview_color"-->
+    <!--            android:textSize="12sp"-->
+    <!--            android:visibility="gone" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/service_amountDuration"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_marginRight="23dp"-->
+    <!--            android:text="£50 per month"-->
+    <!--            android:textColor="@color/textview_color"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:fontFamily="@font/montregular" />-->
+
+    <!--    </RelativeLayout>-->
+
+</RelativeLayout>

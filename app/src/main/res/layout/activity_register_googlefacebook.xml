@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".loginauth.register_googlefacebook">
+    <RelativeLayout
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:id="@+id/responsetv"
+            android:layout_toLeftOf="@+id/rlogo"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/rlogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mainlogocolorfull" />
+
+
+        <LinearLayout
+            android:id="@+id/registerlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlogo"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <EditText
+                    android:id="@+id/rfirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="  First Name"
+                    android:textColorHint="@color/black" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/rsecondname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@android:color/black"
+                    android:hint="  Second Name"
+                    android:textColorHint="@color/black"
+
+                    />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/rphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerlayout1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@android:color/black"
+            android:hint="  Phone number"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/rbuisname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rphoneno"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@android:color/black"
+            android:hint="  Buisness Name"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/rbuisaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbuisname"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="23dp"
+            android:backgroundTint="@android:color/black"
+            android:hint="  Buisness Address"
+            android:textColorHint="@color/black" />
+
+        <CheckBox
+            android:id="@+id/rtermscheck"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/rbuisaddress"
+            android:layout_marginLeft="23dp" />
+
+        <TextView
+            android:id="@+id/regpolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbuisaddress"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="23dp"
+            android:layout_toRightOf="@+id/rtermscheck"
+            android:text="I have read Terms of User and Policy,as well as acknowledged receipt of Privacy Notice."
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbtnaftergoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/regpolicy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/themebtnv2_bg"
+            android:text="Register" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "799216395624",
+    "project_id": "salonwiz-d6237",
+    "storage_bucket": "salonwiz-d6237.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799216395624:android:c8d1a21402179f7d6ae2dd",
+        "android_client_info": {
+          "package_name": "com.example.salonwiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799216395624-m1tp83g1jml057r6k8kpgsck3tvo91o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALQui3D0U7JwxJxNISqChP5ZVwcAva8PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799216395624-m1tp83g1jml057r6k8kpgsck3tvo91o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

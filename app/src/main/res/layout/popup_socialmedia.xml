@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montregular"
+            android:text="Add New Social Media Link"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+
+        <ImageButton
+            android:id="@+id/crossdismiss"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_cross" />
+
+        <EditText
+            android:id="@+id/editText_socialName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/vb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/theme_edittext_profile"
+            android:hint="Title"
+            android:paddingStart="15dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/edittext_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_socialLink"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/editText_socialName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/theme_edittext_profile"
+            android:hint="Link"
+            android:paddingStart="15dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/edittext_color"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_addSocialPopup"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/editText_socialLink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/themebtn_bg"
+            android:fontFamily="@font/montregular"
+            android:text="Add New Link"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

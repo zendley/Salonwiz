@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".afterlogin.UI.homefrag_utilitydeals.utilityformfilling">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/user_toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_toolbar">
+
+            <TextView
+                android:id="@+id/popup_titleutil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montregular"
+                android:text="Gas"
+                android:textColor="@color/themecolor2"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/popup_suppliernametitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_titleutil"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montregular"
+                android:text="Supplier Name *"
+                android:textColor="@color/themecolor2"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_utilsupplierlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_suppliernametitle"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <Spinner
+                    android:id="@+id/popup_utilsupplierlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingEnd="10dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/popup_uploadlatestbilltitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_utilsupplierlist"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montregular"
+                android:text="Upload Latest Bill *"
+                android:textColor="@color/themecolor2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/popup_latestbillimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/popup_uploadlatestbilltitle"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_image" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/popup_latestbilluploadbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/popup_uploadlatestbilltitle"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/popup_latestbillimage"
+                android:background="@drawable/themebtn_bg"
+                android:text="Upload Bill"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/popup_latestbillimagetextpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_uploadlatestbilltitle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/popup_latestbillimage"
+                android:fontFamily="@font/montregular"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/popup_Contractexptitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_latestbillimage"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montregular"
+                android:text="Contract Expiration Date *"
+                android:textColor="@color/themecolor2"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_utilcontractexpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_Contractexptitle"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:id="@+id/popup_utilcontractexpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/upopup_Contractexptitle"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:gravity="center"
+                    android:hint="Select Expiration date"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/popup_Latestbillstatustitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_utilcontractexpdate"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Latest Bill Paid?"
+                android:textColor="@color/themecolor2"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/popup_latestbillradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_Latestbillstatustitle"
+                android:layout_marginLeft="40dp"
+                android:checkedButton="@+id/popup_latestbillradio1"
+                android:orientation="horizontal"
+                android:text="yes">
+
+                <RadioButton
+                    android:id="@+id/popup_latestbillradio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/popup_latestbillradio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tildownloadloaform"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/popup_latestbillradio"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:id="@+id/popup_utildownloadloaform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_cloud_download_24"
+                    android:fontFamily="@font/montregular"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="15dp"
+                    android:text="Download LOA form"
+                    android:textColor="@color/themecolor2"
+                    android:textSize="16sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/popup_uploadLOAformtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_tildownloadloaform"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montregular"
+                android:text="Upload LOA Form  *"
+                android:textColor="@color/themecolor2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/popup_loaformimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/popup_uploadLOAformtitle"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_image" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/popup_loaformuploadbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/popup_uploadLOAformtitle"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/popup_loaformimage"
+                android:background="@drawable/themebtn_bg"
+                android:text="Upload form"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/popup_utilitysubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/popup_loaformimage"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/themebtn_bg"
+                android:fontFamily="@font/montregular"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

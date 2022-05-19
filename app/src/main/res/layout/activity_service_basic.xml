@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_bg"
+    tools:context=".afterlogin.services.service_basic">
+
+    <include
+        android:id="@+id/servicebasic_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/servicebasic_toolbar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/themebtnv2_bg">
+
+        <TextView
+            android:id="@+id/service_basictextoffer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montregular"
+            android:text="Account Creation"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="Account Management"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="1 Cover Photo"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="16 Cover Photo"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="1 Time Revision"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="Testimonial / Reviews"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="Content Writing"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="Query Management"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="Analytics and Reporting"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_basictextoffer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_basictextoffer9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="@font/montregular"
+            android:text="Media Spending"
+            android:textColor="@color/themecolor1"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/market_basicpackagebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="39dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/themebtn_bg"
+            android:fontFamily="@font/montregular"
+            android:text="Get Package"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

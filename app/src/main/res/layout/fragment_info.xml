@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/theme_bg"
+    android:layout_height="match_parent"
+    tools:context=".afterlogin.UI.InfoFragment">
+
+    <include
+        android:id="@+id/customlayout"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/knowledge_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customlayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/themebtnv2_bg"
+        android:drawableLeft="@drawable/information"
+        android:drawablePadding="22dp"
+        android:fontFamily="@font/montregular"
+        android:paddingLeft="12dp"
+        android:text="FAQs"
+        android:textAllCaps="false"
+        android:textAlignment="viewStart"
+        android:textColor="@color/themecolor1"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/knowledge_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/knowledge_faq"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/themebtnv2_bg"
+        android:drawableLeft="@drawable/knowledge_article"
+        android:drawablePadding="22dp"
+        android:fontFamily="@font/montregular"
+        android:paddingLeft="12dp"
+        android:text="Articles"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/themecolor1"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/knowledge_tutorials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/knowledge_article"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/themebtnv2_bg"
+        android:drawableLeft="@drawable/knowledge_tutorial"
+        android:drawablePadding="22dp"
+        android:fontFamily="@font/montregular"
+        android:paddingLeft="12dp"
+        android:text="Tutorials"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/themecolor1"
+        android:textSize="18sp" />
+
+</RelativeLayout>
