@@ -112,15 +112,21 @@
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout-sw600dp/item_slider.xml" value="0.1" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout-sw720dp/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout-sw720dp/item_slider.xml" value="0.1" />
-        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_filincabinet_main.xml" value="0.60625" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_aftergooglefacebookregisteration.xml" value="0.60625" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_contact_us.xml" value="0.60625" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_filincabinet_main.xml" value="0.536" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_knowledgemain.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_maindashboard.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_services.xml" value="0.60625" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/activity_utilitydeals.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/fragment_home.xml" value="0.60625" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/fragment_info.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/fragment_support.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/item_slider.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/renderview_services.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/app/src/main/res/layout/toolbar.xml" value="0.60625" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/filepicker/src/main/res/layout/unicorn_activity_file_picker.xml" value="0.54375" />
+        <entry key="..\:/Users/User1/Documents/Android Projects/Salonwiz/filepicker/src/main/res/layout/unicorn_item_layout_directory_stack.xml" value="0.60625" />
         <entry key="..\:/Users/User1/Downloads/Salonwiz/app/src/main/res/layout/activity_general_main.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/User1/Downloads/Salonwiz/app/src/main/res/layout/activity_knowledgebase_faq.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/User1/Downloads/Salonwiz/app/src/main/res/layout/activity_personalsettings_user.xml" value="0.24871794871794872" />

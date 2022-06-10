@@ -42,4 +42,9 @@
         <item name="colorControlActivated">@color/edittext_register</item>
     </style>
 
+    <style name="FilePickerTheme" parent="LibAppTheme">
+        <!-- Customize your theme here. set LibAppTheme.Dark for dark themes-->
+
+    </style>
+
 </resources>

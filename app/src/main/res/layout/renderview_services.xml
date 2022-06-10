@@ -62,9 +62,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="£50 per month"
+                    android:text="The Premium package is focused on medium to large business with aggressive marketing goals and eager to want us to manage their entire marketing activities."
                     android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>

@@ -9,6 +9,7 @@
     <color name="light_grey">#818181</color>
     <color name="grey">#6B6B6B</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="whiteLow">#60FFFFFF</color>
     <color name="transparent">#0000ffff</color>
     <color name="themecolor1">#AC5288</color>
     <color name="themecolor2">#3F1254</color>

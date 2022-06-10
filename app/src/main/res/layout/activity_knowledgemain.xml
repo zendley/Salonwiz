@@ -58,9 +58,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="Make a repository for your bills\nwith ease"
-                    android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:text="Get information on frequent\nquestions or concerns"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>
@@ -121,9 +121,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="Make a repository for your bills\nwith ease"
-                    android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:text="Find out relevant information\non latest trends and practices."
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>
@@ -184,9 +184,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="Make a repository for your bills\nwith ease"
-                    android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:text="Clarify your understanding on\nbasic skills and knowledge"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>

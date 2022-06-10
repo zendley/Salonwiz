@@ -57,8 +57,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
                     android:text="Make a repository for your bills\nwith ease"
-                    android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>
@@ -119,9 +119,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="Make a repository for your bills\nwith ease"
-                    android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:text="Make a repository for your\ninvoices with ease"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>
@@ -182,9 +182,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="Make a repository for your bills\nwith ease"
-                    android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/white"
+                    android:text="Make a repository for your\nimportant documents with ease"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/whiteLow"
                     android:fontFamily="@font/montregular"/>
 
             </LinearLayout>
