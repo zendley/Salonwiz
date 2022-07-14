@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/theme_bg"
     android:layout_height="match_parent"
-    tools:context=".afterlogin.UI.MessengerFragment">
+    tools:context=".ui.dashboardfragments.MessengerFragment">
 
     <include
         android:id="@+id/messenger_toolbar"
@@ -82,5 +82,12 @@
         android:drawableStart="@drawable/ic_messengar_btn"
         android:paddingLeft="17dip"
         android:paddingRight="15dip" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
 </RelativeLayout>

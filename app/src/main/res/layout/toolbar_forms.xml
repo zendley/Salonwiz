@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/theme_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theme_bg"
+        android:layout_marginTop="5dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/toolbar_backarrow"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/toolbar_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/toolbar_backarrow"
+            android:fontFamily="@font/montregular"
+            android:text="My application"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toolbar_addnewuserutility"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10sp"
+            android:visibility="gone"
+            android:layout_width="115dp"
+            android:textColor="@color/themecolor1"
+            android:layout_height="25dp"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montregular"
+            android:background="@drawable/themebtnv2_bg"
+            android:text="Add New Utility" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toolbar_uploadfile"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10sp"
+            android:visibility="gone"
+            android:layout_width="115dp"
+            android:textColor="@color/themecolor1"
+            android:layout_height="25dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/montregular"
+            android:textAllCaps="false"
+            android:background="@drawable/themebtnv2_bg"
+            android:text="Upload" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/toolbar_backarrow"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/userloggedin_pic"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personaluser" />
+
+            <TextView
+                android:id="@+id/userloggedin_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/userloggedin_pic"
+                android:fontFamily="@font/montregular"
+                android:text="Sakander"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/userloggedin_occupt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userloggedin_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/userloggedin_pic"
+                android:fontFamily="@font/montregular"
+                android:text="Benedicts Salon Overview"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

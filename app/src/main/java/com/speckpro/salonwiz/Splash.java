@@ -3,7 +3,7 @@ package com.speckpro.salonwiz;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.os.Build.VERSION.SDK_INT;
-import static com.speckpro.salonwiz.BaseUrl.baseurl;
+import static com.speckpro.salonwiz.retrofit.BaseUrl.baseurl;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -58,10 +58,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.speckpro.salonwiz.afterlogin.maindashboard;
-import com.speckpro.salonwiz.loginauth.aftergooglefacebookregisteration;
-import com.speckpro.salonwiz.loginauth.login;
-import com.speckpro.salonwiz.loginauth.register;
+import com.speckpro.salonwiz.login.Login;
+import com.speckpro.salonwiz.ui.MainDashboard;
+import com.speckpro.salonwiz.register.AfterRegisterGoogleFacebook;
+import com.speckpro.salonwiz.register.Register;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -88,10 +88,10 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        SharedPreferences sh = getSharedPreferences("MySharedPref", Context.MODE_PRIVATE);
+        SharedPreferences sh = getSharedPreferences("MySalonSharedPref", Context.MODE_PRIVATE);
         boolean loggedstatus = sh.getBoolean("islogged", false);
         if(loggedstatus){
-            Intent intent=new Intent(getApplicationContext(), maindashboard.class);
+            Intent intent=new Intent(getApplicationContext(), MainDashboard.class);
             startActivity(intent);
         }
     }
@@ -110,12 +110,11 @@ public class Splash extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
 
-        setContentView(R.layout.splash);
+        setContentView(R.layout.activity_splash);
         // checkPermission();
         // requestPermission();
 
         callbackManager = CallbackManager.Factory.create();
-
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
                     @Override
@@ -142,7 +141,6 @@ public class Splash extends AppCompatActivity {
         facebooklogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 LoginManager.getInstance().setLoginBehavior(LoginBehavior.WEB_ONLY);
                 LoginManager.getInstance().logInWithReadPermissions(Splash.this, Arrays.asList("public_profile","email"));
             }
@@ -152,6 +150,7 @@ public class Splash extends AppCompatActivity {
         GoogleSignInOptions gso =  new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
+
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,7 +172,7 @@ public class Splash extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Splash.this, login.class);
+                Intent i = new Intent(Splash.this, Login.class);
                 startActivity(i);
             }
         });
@@ -181,7 +180,7 @@ public class Splash extends AppCompatActivity {
         registerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Splash.this, register.class);
+                Intent i = new Intent(Splash.this, Register.class);
                 startActivity(i);
             }
         });
@@ -389,14 +388,14 @@ public class Splash extends AppCompatActivity {
                             editor.putString("BusinessName", BusinessName);
                             editor.apply();
                             //   Toast.makeText(getApplicationContext(), "Login Succesful", Toast.LENGTH_SHORT).show();
-                            Intent intent=new Intent(Splash.this,maindashboard.class);
+                            Intent intent=new Intent(Splash.this, MainDashboard.class);
                             startActivity(intent);
                             progressDialog.dismiss();
 
                         }
                         else{
                             // Toast.makeText(getApplicationContext(), "Data Not Found", Toast.LENGTH_SHORT).show();
-                            Intent intent=new Intent(Splash.this, aftergooglefacebookregisteration.class);
+                            Intent intent=new Intent(Splash.this, AfterRegisterGoogleFacebook.class);
                             intent.putExtra("femail",email);
                             intent.putExtra("ffirstName",fname);
                             intent.putExtra("flastName",lname);
@@ -416,7 +415,7 @@ public class Splash extends AppCompatActivity {
                     //   Toast.makeText(getApplicationContext(), "Data Not Found", Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), "Going for registration", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
-                    Intent intents=new Intent(Splash.this,aftergooglefacebookregisteration.class);
+                    Intent intents=new Intent(Splash.this, AfterRegisterGoogleFacebook.class);
                     intents.putExtra("femail",email);
                     intents.putExtra("ffirstName",fname);
                     intents.putExtra("flastName",lname);

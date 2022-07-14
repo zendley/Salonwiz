@@ -1,9 +1,9 @@
 package com.speckpro.salonwiz.retrofit;
 
 
-import com.speckpro.salonwiz.loginauth.LoginResponse;
-import com.speckpro.salonwiz.loginauth.fbgregistermodelclass;
-import com.speckpro.salonwiz.loginauth.registermodelclass;
+import com.speckpro.salonwiz.models.LoginResponse;
+import com.speckpro.salonwiz.models.fbgregistermodelclass;
+import com.speckpro.salonwiz.models.RegisterResponse;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -20,7 +20,7 @@ public interface RetrofitAPI {
 
     @Headers({"Accept: application/json"})
     @POST("/api/user/signup")
-   Call<registermodelclass> createPost(@Body registermodelclass mregistermodelclass);
+   Call<RegisterResponse> createPost(@Body RegisterResponse mregistermodelclass);
 
     @Multipart
     @POST("/api/user/update")

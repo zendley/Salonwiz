@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SHA1_FingerPrintGenerate">
+    tools:context=".utils.SHA1_FingerPrintGenerate">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"

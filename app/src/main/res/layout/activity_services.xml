@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".afterlogin.services.services">
+    tools:context=".ui.services.ServicesActivity">
 
     <include
         android:id="@+id/service_layout"
@@ -12,11 +12,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <ProgressBar
+        android:id="@+id/progressBar_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_noDataServces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="15sp"
+        android:textColor="#AC5288" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_services"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/service_layout"
+        android:visibility="gone"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"

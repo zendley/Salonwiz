@@ -2,35 +2,51 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/theme_bg"
     android:layout_height="match_parent"
-    tools:context=".afterlogin.UI.notification">
+    android:background="@color/white"
+    tools:context=".ui.dashboardfragments.NotificationsFragment">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
     <include
         android:id="@+id/notifation_toolbar"
         layout="@layout/toolbar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content" />
 
-        />
-     <RelativeLayout
-         android:layout_below="@id/notifation_toolbar"
-         android:background="@color/white"
-         android:layout_width="match_parent"
-         android:layout_height="fill_parent">
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="No new notification"
-             android:layout_centerHorizontal="true"
-             android:layout_centerVertical="true"
-             android:textSize="17sp"
-             android:textColor="@color/themecolor1"
-             />
+        <ProgressBar
+            android:id="@+id/progressBar_notificatins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
 
-     </RelativeLayout>
+        <TextView
+            android:id="@+id/textView_noNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No New Notification!"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/themecolor1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifation_toolbar"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent" />
 
     </RelativeLayout>
 

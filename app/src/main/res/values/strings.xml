@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Salonwiz</string>
+    <string name="app_name">My Salon Manager</string>
     <string name="title_activity_mainscreen">mainscreen</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

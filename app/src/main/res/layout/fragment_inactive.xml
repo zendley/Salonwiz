@@ -4,11 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparent"
-    tools:context=".afterlogin.UI.homefrag_utilitydeals.inactiveFragment">
+    tools:context=".ui.utilitydeals.uifragments.InActiveDealsFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar_inactivedeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_noInActiveDeals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No In Active Deals Found!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white" />
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRVCourse"
+        android:id="@+id/recyclerView_inActive"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

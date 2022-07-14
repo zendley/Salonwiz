@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:id="@+id/layout_renderNotifications">
+
+    <ImageView
+        android:id="@+id/imageView_notificationIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:rotation="45"
+        android:src="@drawable/ic_notificationbell"
+        app:tint="@color/themecolor1" />
+
+    <TextView
+        android:id="@+id/textView_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/imageView_notificationOptions"
+        android:layout_toRightOf="@+id/imageView_notificationIcon"
+        android:text="You Got New Gas Deal"
+        android:textColor="@color/themecolor1"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView_notificationOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:rotation="90"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:tint="@color/themecolor1" />
+
+
+</RelativeLayout>

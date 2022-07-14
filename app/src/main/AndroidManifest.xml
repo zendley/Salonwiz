@@ -27,55 +27,50 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/applogo"
+        android:icon="@drawable/mysaloonapplogo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@drawable/applogo"
+        android:roundIcon="@drawable/mysaloonapplogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Salonwiz"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name=".afterlogin.user.termsandconditions"
+            android:name=".ui.user.TermsAndConditions"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.UI.knowledgemain"
+            android:name=".ui.knowledgebase.Knowledgebase"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.user.ContactUs"
+            android:name=".ui.user.ContactUs"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.UI.homefrag_utilitydeals.update_utilityformfilling"
+            android:name=".ui.utilitydeals.UpdateUtilityActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.knowledgebase.knowledgebase_tutorial"
+            android:name=".ui.knowledgebase.KnowledgeTutorialsActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.knowledgebase.knowledgebase_article"
+            android:name=".ui.knowledgebase.KnowledgeArticlesActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.knowledgebase.knowledgebase_faq"
+            android:name=".ui.knowledgebase.KnowledgeFaqActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.UI.homefrag_utilitydeals.utilityformfilling"
+            android:name=".ui.utilitydeals.AddUtilityActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.services.service_ultra"
+            android:name=".register.AfterRegisterGoogleFacebook"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.services.service_prem"
+            android:name=".ui.filingcabinet.AddUtilityBills"
             android:exported="false" />
         <activity
-            android:name=".loginauth.aftergooglefacebookregisteration"
+            android:name=".ui.filingcabinet.AddSupplierInvoices"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.utilitiesbills_uploadfile"
-            android:exported="false" />
-        <activity
-            android:name=".afterlogin.filingcabinet.supplierinvoices_uploadfile"
-            android:exported="false" />
-        <activity
-            android:name=".afterlogin.UI.homefrag_utilitydeals.utilitydeals"
+            android:name=".ui.utilitydeals.UtilityDealsMain"
             android:exported="false" />
 
         <provider
@@ -96,64 +91,64 @@
             android:value="@string/facebook_client_token" />
 
         <activity
-            android:name=".afterlogin.filingcabinet.Utilititesinput.Selectedcards"
+            android:name=".ui.utilitydeals.input.UtilitySelectedCards"
             android:exported="false" />
         <activity
-            android:name=".loginauth.loginresponsepojo.sharedpref"
+            android:name=".utils.sharedpref"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.Utilititesinput.utilities_uploadselecteddata"
+            android:name=".ui.utilitydeals.input.UtilitiesUploadSelectedData"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.Utilititesinput.utilities_inputselection"
+            android:name=".ui.utilitydeals.input.UtilitiesInputSelection"
             android:exported="false" />
         <activity
-            android:name=".loginauth.register_googlefacebook"
+            android:name=".register.RegisterGoogleFacebook"
             android:exported="false" />
         <activity
-            android:name=".SHA1_FingerPrintGenerate"
+            android:name=".utils.SHA1_FingerPrintGenerate"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.user.personalsettings_user"
+            android:name=".ui.user.PersonnalSettings"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.general_uploadfile"
+            android:name=".ui.filingcabinet.AddGenealDocument"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.general_main"
+            android:name=".ui.filingcabinet.GeneralDocumentsActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.supplierinvoices_main"
+            android:name=".ui.filingcabinet.SupplierInvoicesActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.utilitiesbills_main"
+            android:name=".ui.filingcabinet.UtilityBillsActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.filincabinet_main"
+            android:name=".ui.filingcabinet.FilingCabinetActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.services.service_basic"
+            android:name=".ui.services.ServiceDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.services.services"
+            android:name=".ui.services.ServicesActivity"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.maindashboard"
+            android:name=".ui.MainDashboard"
             android:exported="false"
             android:label="" />
         <activity
-            android:name=".loginauth.register"
+            android:name=".register.Register"
             android:exported="false"
             android:windowSoftInputMode="adjustPan"
             />
         <activity
-            android:name=".loginauth.login"
+            android:name=".login.Login"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.user.ForgetPassword"
+            android:name=".ui.user.ForgetPassword"
             android:exported="false" />
         <activity
-            android:name=".afterlogin.filingcabinet.Utilititesinput.utilities_remaininginputselection"
+            android:name=".ui.utilitydeals.input.UtilitiesRemainingInputSelection"
             android:exported="false" />
         <activity
             android:name=".Splash"

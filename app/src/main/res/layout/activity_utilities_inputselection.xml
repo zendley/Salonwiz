@@ -5,7 +5,7 @@
     android:background="@drawable/theme_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".afterlogin.filingcabinet.Utilititesinput.utilities_inputselection">
+    tools:context=".ui.utilitydeals.input.UtilitiesInputSelection">
 
     <include
         android:id="@+id/utilitydeals_toolbar"
@@ -15,11 +15,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <ProgressBar
+        android:id="@+id/progressBar_utilitesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_noInputUtility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Utilities Found!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRVCourse"
+        android:id="@+id/recyclerView_inputUtilities"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/util_submitbtn"
+        android:layout_above="@+id/button_submitUtility"
         android:layout_below="@+id/utilitydeals_toolbar"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -27,7 +48,7 @@
         android:layout_marginBottom="10dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/util_submitbtn"
+        android:id="@+id/button_submitUtility"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"

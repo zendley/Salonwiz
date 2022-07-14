@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".loginauth.register_googlefacebook">
+    tools:context=".register.RegisterGoogleFacebook">
     <RelativeLayout
         android:id="@+id/mainview"
         android:layout_width="match_parent"

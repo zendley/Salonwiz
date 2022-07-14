@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/theme_bg"
     android:layout_height="match_parent"
-    tools:context=".afterlogin.user.personalsettings_user">
+    tools:context=".ui.user.PersonnalSettings">
 
     <include
         android:id="@+id/user_toolbar"
@@ -27,18 +27,32 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/profpicture_userpersonalcard"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
                     app:cardCornerRadius="250dp">
+
+                    <TextView
+                        android:id="@+id/textView_nameChar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle_bg"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:text="A" />
 
                     <ImageView
                         android:id="@+id/profpicture_userpersonal"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:visibility="gone"
                         android:scaleType="centerCrop"
                         android:src="@drawable/defaultprofile" />
 
@@ -50,6 +64,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="10dp"
+                    android:visibility="gone"
                     android:layout_toEndOf="@id/profpicture_userpersonalcard"
                     android:orientation="vertical">
 
@@ -60,9 +75,9 @@
                         android:layout_marginStart="10dp"
                         android:background="@drawable/themebtn_bg"
                         android:fontFamily="@font/montregular"
-                        android:text="Change Picture"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
+                        android:text="Change Picture"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
 
@@ -84,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profpicture_userpersonalcard"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="30dp">
 
                     <LinearLayout
@@ -112,9 +127,9 @@
                             android:background="@drawable/theme_edittext_profile"
                             android:fontFamily="@font/montregular"
                             android:hint="First"
-                            android:singleLine="true"
                             android:imeOptions="actionNext"
                             android:paddingStart="15dp"
+                            android:singleLine="true"
                             android:textColor="@color/black"
                             android:textColorHint="@color/grey"
                             android:textSize="13sp" />
@@ -146,9 +161,9 @@
                             android:background="@drawable/theme_edittext_profile"
                             android:fontFamily="@font/montregular"
                             android:hint="Last"
-                            android:singleLine="true"
                             android:imeOptions="actionNext"
                             android:paddingStart="15dp"
+                            android:singleLine="true"
                             android:textColor="@color/black"
                             android:textColorHint="@color/grey"
                             android:textSize="13sp" />
@@ -345,8 +360,8 @@
                     android:id="@+id/updateprogile_personal"
                     android:layout_width="150dp"
                     android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_below="@+id/user_supplierName"
-                    android:layout_centerInParent="true"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/themebtn_rounded_bg"
@@ -354,6 +369,13 @@
                     android:text="Update"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_updateUser"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             </RelativeLayout>
 

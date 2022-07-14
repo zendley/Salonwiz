@@ -5,7 +5,7 @@
     android:background="@drawable/theme_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".afterlogin.filingcabinet.Utilititesinput.utilities_uploadselecteddata">
+    tools:context=".ui.utilitydeals.input.UtilitiesUploadSelectedData">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/idRVCourse"

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/theme_bg"
+    android:layout_weight="5"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.utilitydeals.input.UtilitySelectedCards">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ugas_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:checkable="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/sgascheck"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/sutil_gas"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/sutil_gastitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_gas"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montregular"
+                            android:text="Gas"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/uelectric_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/selectriccheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_electric"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/sutil_electrictitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_electric"
+                            android:layout_centerHorizontal="true"
+                            android:text="Electric"
+                            android:fontFamily="@font/montregular"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/uinsurence_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/sinsurencecheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_insurence"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:layout_centerInParent="true"
+                             />
+
+                        <TextView
+                            android:id="@+id/sutil_insurencetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_insurence"
+                            android:layout_centerHorizontal="true"
+                            android:text="Insurence\nEmp and Public"
+                            android:fontFamily="@font/montregular"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/uwaste_card"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/swastecheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_waste"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:layout_centerInParent="true"
+                             />
+
+                        <TextView
+                            android:id="@+id/sutil_wastetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_waste"
+                            android:layout_centerHorizontal="true"
+                            android:text="Waste\nBin Disposal"
+                            android:fontFamily="@font/montregular"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/utelephone_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/stelephonecheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_telephone"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:layout_centerInParent="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/sutil_telephonetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_telephone"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montregular"
+                            android:text="Telephone"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ubroadband_card"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/sbroadbandcheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_broadband"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:layout_centerInParent="true"
+                             />
+
+                        <TextView
+                            android:id="@+id/sutil_broadbandtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_broadband"
+                            android:layout_centerHorizontal="true"
+                            android:text="Broadband"
+                            android:fontFamily="@font/montregular"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/udrinking_card"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/sdrinkwatercheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_drinkingwater"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:layout_centerInParent="true"
+                             />
+
+                        <TextView
+                            android:id="@+id/sutil_drinkingtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_drinkingwater"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montregular"
+                            android:padding="5dp"
+                            android:text="Drinking Water\nSupply and Waste"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ucardterminal_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="35dp"
+                    android:checkable="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/scardterminalcheck"
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <ImageView
+                            android:id="@+id/sutil_cardterm"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/sutil_cardtermtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sutil_cardterm"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montregular"
+                            android:text="Card\nTerminal"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/themecolor2" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.17">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/snextutil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/messengertxt_rounded_bg"
+            android:fontFamily="@font/montregular"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/themecolor2"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>
