@@ -22,7 +22,7 @@
                 android:id="@+id/layout_userInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_35sdp">
+                android:layout_marginTop="@dimen/_25sdp">
 
                 <ImageView
                     android:id="@+id/loggedin_pic"
@@ -47,7 +47,7 @@
                     android:fontFamily="@font/montregular"
                     android:text="Hello"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/loggedin_name"
@@ -60,7 +60,7 @@
                     android:fontFamily="@font/montregular"
                     android:text="Sakander"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -68,22 +68,22 @@
                     android:layout_marginTop="3dp"
                     android:layout_toRightOf="@+id/loggedin_name"
                     android:fontFamily="@font/montregular"
-                    android:text="!"
+                    android:text=" !"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_13ssp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/loggedin_occupt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/loggedin_name"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="3dp"
                     android:layout_marginTop="3dp"
                     android:layout_toEndOf="@+id/loggedin_pic"
                     android:fontFamily="@font/montregular"
                     android:text="Benedicts Salon Overview"
                     android:textColor="@color/white"
-                    android:textSize="13sp" />
+                    android:textSize="20sp" />
 
             </RelativeLayout>
 
@@ -101,7 +101,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
                         android:background="@color/white">
 
                         <androidx.viewpager.widget.ViewPager
@@ -170,7 +170,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/cardView_1"
                             android:layout_width="0dp"
-                            android:layout_height="@dimen/_90sdp"
+                            android:layout_height="@dimen/_80sdp"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             app:cardCornerRadius="12dp"
@@ -188,8 +188,8 @@
 
                                 <ImageView
                                     android:id="@+id/imageView_card1"
-                                    android:layout_width="@dimen/_53sdp"
-                                    android:layout_height="@dimen/_41sdp"
+                                    android:layout_width="@dimen/_43sdp"
+                                    android:layout_height="@dimen/_31sdp"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginStart="15dp"
                                     android:src="@drawable/home_fold" />
@@ -204,7 +204,7 @@
                                     android:gravity="center"
                                     android:text="Filing Cabinet"
                                     android:textColor="@color/white"
-                                    android:textSize="16sp" />
+                                    android:textSize="20sp" />
 
                             </RelativeLayout>
 
@@ -213,7 +213,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/cardView_2"
                             android:layout_width="0dp"
-                            android:layout_height="@dimen/_90sdp"
+                            android:layout_height="@dimen/_80sdp"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             app:cardCornerRadius="12dp"
@@ -231,8 +231,8 @@
 
                                 <ImageView
                                     android:id="@+id/imageView_card2"
-                                    android:layout_width="@dimen/_53sdp"
-                                    android:layout_height="@dimen/_41sdp"
+                                    android:layout_width="@dimen/_43sdp"
+                                    android:layout_height="@dimen/_31sdp"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginStart="15dp"
                                     android:src="@drawable/home_assis" />
@@ -247,7 +247,7 @@
                                     android:gravity="center"
                                     android:text="Digital Assistant"
                                     android:textColor="@color/white"
-                                    android:textSize="16sp" />
+                                    android:textSize="20sp" />
 
                             </RelativeLayout>
 
@@ -268,7 +268,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/cardView_3"
                             android:layout_width="0dp"
-                            android:layout_height="@dimen/_90sdp"
+                            android:layout_height="@dimen/_80sdp"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             app:cardCornerRadius="12dp"
@@ -286,8 +286,8 @@
 
                                 <ImageView
                                     android:id="@+id/imageView_card3"
-                                    android:layout_width="@dimen/_53sdp"
-                                    android:layout_height="@dimen/_41sdp"
+                                    android:layout_width="@dimen/_43sdp"
+                                    android:layout_height="@dimen/_31sdp"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginStart="15dp"
                                     android:src="@drawable/ic_home_deals" />
@@ -302,7 +302,7 @@
                                     android:gravity="center"
                                     android:text="Utility Deals"
                                     android:textColor="@color/white"
-                                    android:textSize="16sp" />
+                                    android:textSize="20sp" />
 
                             </RelativeLayout>
 
@@ -311,7 +311,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/cardView_4"
                             android:layout_width="0dp"
-                            android:layout_height="@dimen/_90sdp"
+                            android:layout_height="@dimen/_80sdp"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             app:cardCornerRadius="12dp"
@@ -329,8 +329,8 @@
 
                                 <ImageView
                                     android:id="@+id/imageView_card4"
-                                    android:layout_width="@dimen/_53sdp"
-                                    android:layout_height="@dimen/_41sdp"
+                                    android:layout_width="@dimen/_43sdp"
+                                    android:layout_height="@dimen/_31sdp"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginStart="15dp"
                                     android:src="@drawable/home_market" />
@@ -345,7 +345,7 @@
                                     android:gravity="center"
                                     android:text="Services"
                                     android:textColor="@color/white"
-                                    android:textSize="16sp" />
+                                    android:textSize="20sp" />
 
                             </RelativeLayout>
 
